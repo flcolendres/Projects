@@ -4,20 +4,17 @@ void insertionSort(float bucket[]);
 int main()
 {
    const int n = 10;
-   float bucket[n][n] = {0};
+   float bucket[n] = {0};
    float arr[n] = { 0.25f, 0.33f, 0.0f, 0.1f, 0.99f, 0.98f, 0.2, 0.7f, 0.32f, 0.98f };
    for (int i = 0; i < n; i++)
    {
-      bucket[int(n * arr[i])][i] = arr[i];
+      bucket[int(n * arr[i])] = arr[i];
    }
    for (int i = 0; i < n; i++)
    {
-      if(bucket[i][0] > 0) insertionSort(bucket[i]);
+      insertionSort(&bucket[i]);
    }
-   for (int i = 0; i < n; i++)
-   {
-      for (int j = 0; j < i; j++) std::cout << bucket[i][j] << " ";
-   }
+   for (int i = 0; i < n; i++) std::cout << bucket[i] << " ";
 }
 
 void insertionSort(float bucket[])
