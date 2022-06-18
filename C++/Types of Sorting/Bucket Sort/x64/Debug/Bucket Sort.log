@@ -1,3 +1,0 @@
-﻿  bucketsort.cpp
-C:\Users\Francis Colendres\Desktop\projects\C++\Types of Sorting\Bucket Sort\bucketsort.cpp(8,85): warning C4305: 'initializing': truncation from 'double' to 'float'
-  Bucket Sort.vcxproj -> C:\Users\Francis Colendres\Desktop\projects\C++\Types of Sorting\x64\Debug\Bucket Sort.exe
